@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Novak Djokovic</title>  
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap" rel="stylesheet">
+    </head>
+    <body onload="setInterval(changeColor,3000)">
+        <div class="container">
+            <script src="js/external.js"></script>
+            <!----------------------------This is the navigation bar---------------------------->
+            <nav>
+                <a href="/Home/">PROFILE</a>
+                <a href="/Achievements/">ACHIEVEMENTS</a>
+                <a href="/Sponsors">SPONSORS</a>
+                <a href="/Contact">CONTACT</a>
+            </nav>
+            <!--------------------------------Title of the Page---------------------------------->
+            <h1>Novak Djokovic: <br> World No. 1 in men's singles tennis by the ATP</h1>
+            <!----------------------The first section: Picture with the quote-------------------->
+            <div class="title">
+                <!--Photo by Filip Mroz - Unsplash-->
+                <img id="image" class="image" src='images/filip-mroz--WgTWXb4nh4-unsplash.jpg' width="1036.8" height="777.6" >
+                <!---------the picture changing into another did not work in the external file, therefore, placed in html file---------->
+                <script>
+                //Concept #2 : Picture, when hovered, changes to another one
+                    function changeimage(event) {
+                        target = event.target;
+                        target.src = "images/filip-mroz--WgTWXb4nh4-unsplash.jpg" ;
+                    }
+                    function changetoimage1(event) {
+                        target = event.target;
+                        target.src = "images/flou-gaupr-TiWoNYXvFIM-unsplash.jpg"; //Photo By Flou Gaupr - Unsplash
+                    }     
+                    var element = document.getElementById("image");
+                    element.addEventListener("mouseover", changeimage);
+                    element.addEventListener("mouseout", changetoimage1);
+                </script>
+                <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+                <h3>"Each and every one of us has a unique personality, consisting of all the little things that empower us, 
+                    inspire and keep us going throughout the days and years. I am no exception. In order to be the best in 
+                    tennis, I had to unlock so many different spheres of knowledge and apply them to my every day life. 
+                    Welcome to the part of my webpage where I will share with you all the things I am passionate about.
+                     Here, you will get to know every aspect of me - up close and personal."
+                        <br>~Novak Djokovic</h3>
+            </div>
+            <!------This is the about section regarding the biography of the Novak Djokovic, the newsletter sign up, and the slogan-------->
+            <div class="about">
+                <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+                <h1>About</h1>
+                <ul>
+                    <li>took a racquet in his hands for the first time when he was four years old</li>
+                    <li> As a 13-year-old boy, Novak went to Munich, to train at the academy run by renowned tennis coach Nikola Pilic</li>
+                    <li>14-year-old Novak. He ended the year as a triple European champion in singles, doubles and in team competition – while
+                         also winning the silver medal at the World Junior Championship in a team competition for Yugoslavia.</li>
+                    <li>won prestigious tournaments such as: “La Boule” and “La Poet” in France, Prince’s Cup in Miami under 18, as well as ITF tournament in Pancevo</li>
+                    <li>continued into 2008 as he won the first Grand Slam tournament of the year, the Australian Open, becoming the first Serbian man to win one of tennis’s 
+                        four most prestigious singles championships</li>
+                    <li>In January 2019 Djokovic won his seventh career Australian Open singles title, the most in the history of that tournament. 
+                        He then defended his Wimbledon title in epic fashion, defeating Federer in a four-hour 57-minute final (the longest in tournament history) that was 
+                        decided in an unprecedented tiebreaker after the fifth set ended in a 12–12 tie</li>
+                    <li>In 2020 Djokovic continued to dominate at the Australian Open, winning his 17th Grand Slam title.</li>
+                </ul>
+                <!--Photo by Nikola Rakic - Unsplash-->
+                <img id="image2" class="image2" src='images/nikola-rakic-k7vQnFkVz4o-unsplash.jpg' width="779.4" height="522.2" >
+                <script>
+                //Concept #2 : Picture, when hovered, changes to another one
+                    function changeimage2(event) {
+                        target = event.target;
+                        target.src = "images/nikola-rakic-k7vQnFkVz4o-unsplash.jpg" ;
+                    }
+                    function changetoimage3(event) {
+                        target = event.target;
+                        target.src = "images/josh-calabrese-zcYRw547Dps-unsplash.jpg";//Photo By Josh Calabrese - Unsplash
+                    }   
+                    var element = document.getElementById("image2");
+                    element.addEventListener("mouseover", changeimage2);
+                    element.addEventListener("mouseout", changetoimage3);
+                </script>
+                <h2>Enter your name and e-mail to subscribe to latest news: </h2>
+                <!------Form for the latest news------------>
+                <form>
+                    <label for="Name">Name</label>
+                    <input type="text" onfocus="myFunction(this)" required>
+                    <br>
+                    <label for="E-mail">E-mail</label>
+                    <input type="text" onfocus="myFunction(this)" required>
+                    <br>
+                    <button type="submit">SUBMIT</button>
+                </form>   
+                <!--------Slogan of the Novak Djokovic-------->
+                <h4 id="slogan">DARE TO DREAM</h4>
+            </div>
+            <!---------------------------------Footer------------------------------>
+            <div class="footer">&copy;Designed by KB 2020</div>
+        </div>
+    </body>
+</html>
